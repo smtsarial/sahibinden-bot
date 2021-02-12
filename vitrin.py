@@ -27,7 +27,7 @@ def main(url):
     req = requests.get(url, headers=headers_dict)
     context = req.content
     soup = BeautifulSoup(context, "html.parser")
-   
+    print(soup)
 
     for link in soup.find_all("td", {"class": "searchResultsLargeThumbnail"}):
         ilan_links.append(link.find("a")["href"])
