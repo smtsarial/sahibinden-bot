@@ -9,13 +9,14 @@ Sahibinden.com yurt dışından gelen kullanıcılar için bir kapalı kutu oldu
 
 
 
-https://raw.githubusercontent.com/smtsarial/sahibinden-bot/main/images/token.png?token=ALFMUIQEVSBJLYIDFOOPCULAE2GGA
+![image](https://github.com/smtsarial/sahibinden-bot/blob/main/images/token.png)
 
 Buradaki linkten https://discord.com/developers/applications application sayfasına ulaşabilirsiniz.
 
 Eğer bir botunuz yoksa yenisini oluşturun ve token kodunu kopyalayın ! 
 
-https://raw.githubusercontent.com/smtsarial/sahibinden-bot/main/images/token_key.png?token=ALFMUIXYV2D7LF7OWYZVJBTAE2GO6
+![image](https://github.com/smtsarial/sahibinden-bot/blob/main/images/token_key.png)
+
 
 Aldığınız token adresini kodun en sonunda bulacağınız bloga resimdeki gibi yapıştırın.
 
