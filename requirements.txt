@@ -1,6 +1,5 @@
 beautifulsoup4
 UserAgent
 requests
-random
 discord
 load_dotenv
