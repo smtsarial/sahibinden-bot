@@ -4,4 +4,3 @@ requests
 discord
 python-dotenv
 python-time
-os-sys
