@@ -1,2 +1,2 @@
 worker: python bot.py
-heroku ps: scale --app sahibinden-bot web=1
+heroku ps: scale web=1
