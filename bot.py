@@ -1,5 +1,3 @@
-#import os
-import random
 import discord
 from dotenv import load_dotenv
 #import sahibinden
@@ -59,6 +57,7 @@ async def on_message(message):
             await message.author.dm_channel.send(f"{i} - {message.author.mention} --> {response[i]}")
         
         await message.channel.send(f"{time} - {message.author.mention} --> En yeni ARABA ilanları gönderildi !!")
+        print(f'{client.user} ARABA mesajı {message.author} yolladı!')
 
     elif message.content.lower() == 'emlak yeni':
         response = (vitrin.main(estate_url))
@@ -70,6 +69,7 @@ async def on_message(message):
             await message.author.dm_channel.send(f"{i} - {message.author.mention} --> {response[i]}")
         
         await message.channel.send(f"{time} - {message.author.mention} --> En yeni EMLAK ilanları gönderildi !!")
+        print(f'{client.user} EMLAK mesajı {message.author} yolladı!')
     
     elif message.content.lower() == 'arazi yeni':
         response = (vitrin.main(arazi_url))
@@ -81,6 +81,7 @@ async def on_message(message):
             await message.author.dm_channel.send(f"{i} - {message.author.mention} --> {response[i]}")
         
         await message.channel.send(f"{time} - {message.author.mention} --> En yeni ARAZİ-SUV ilanları gönderildi !!")
+        print(f'{client.user} ARAZİ-SUV mesajı {message.author} yolladı!')
 
     elif message.content.lower() == 'ismakinesi yeni':
         response = (vitrin.main(ismakineleri_url))
@@ -92,6 +93,7 @@ async def on_message(message):
             await message.author.dm_channel.send(f"{i} - {message.author.mention} --> {response[i]}")
         
         await message.channel.send(f"{time} - {message.author.mention} --> En yeni İŞ MAKİNESİ ilanları gönderildi !!")
+        print(f'{client.user} İŞ MAKİNESİ {message.author} yolladı!')
     
     elif message.content.lower() == 'motor yeni':
         response = (vitrin.main(motor_url))
@@ -103,8 +105,10 @@ async def on_message(message):
             await message.author.dm_channel.send(f"{i} - {message.author.mention} --> {response[i]}")
         
         await message.channel.send(f"{time} - {message.author.mention} --> En yeni MOTOR ilanları gönderildi !!")
+        print(f'{client.user} MOTORLARI {message.author} yolladı!')
     else:
         await message.channel.send(f"{time} - {message.author.mention} --> INVALID COMMAND TRY AGAIN")
+        print(f'{client.user} mesajı {message.author} yolladı!')
 
 
 
