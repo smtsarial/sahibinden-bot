@@ -1,7 +1,6 @@
 beautifulsoup4
 UserAgent
 requests
-time
 os
 random
 discord
