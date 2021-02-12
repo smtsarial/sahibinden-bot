@@ -2,7 +2,7 @@
 import random
 import discord
 from dotenv import load_dotenv
-import sahibinden
+#import sahibinden
 import vitrin
 from time import gmtime, strftime
 ####################################################################################################################
