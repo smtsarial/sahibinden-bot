@@ -1,8 +1,7 @@
 beautifulsoup4
 UserAgent
 requests
-gmtime
-strftime
+time
 os
 random
 discord
