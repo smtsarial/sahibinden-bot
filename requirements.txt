@@ -2,3 +2,4 @@ beautifulsoup4
 UserAgent
 requests
 discord
+dotenv 
