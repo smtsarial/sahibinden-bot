@@ -1,0 +1,9 @@
+BeautifulSoup
+UserAgent
+requests
+gmtime
+strftime
+os
+random
+discord
+load_dotenv
