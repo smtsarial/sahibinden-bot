@@ -1,4 +1,4 @@
-import os
+#import os
 import random
 import discord
 from dotenv import load_dotenv
@@ -22,7 +22,7 @@ arazi_url = "https://www.sahibinden.com/kategori-vitrin?viewType=Classic&categor
 time = strftime("%H:%M - %d/%m/%y", gmtime())
 
 load_dotenv()
-TOKEN = os.getenv('DISCORD_TOKEN')
+#TOKEN = os.getenv('DISCORD_TOKEN')
 
 client = discord.Client()
 
