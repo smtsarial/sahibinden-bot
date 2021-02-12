@@ -2,4 +2,6 @@ beautifulsoup4
 fake-useragent
 requests
 discord
-python-dotenv 
+python-dotenv
+python-time
+os-sys
