@@ -128,4 +128,4 @@ async def on_message(message):
         await message.channel.send(f"{time} - {message.author.mention} --> INVALID COMMAND TRY AGAIN")
         print(f'{client.user} mesajı {message.author} yolladı!')
 
-client.run("ODA5NDkyMzQyNTk0ODYzMTg1.YCV4fg.ZMLSy36OiR-Yf3VrENoxvq2ucrQ")
+client.run("TOKENNNNNNNN")
