@@ -49,6 +49,7 @@ async def on_message(message):
         await message.channel.send(f"ismakinesi yeni --> Yeni yüklenen İŞ MAKİNESİ ilanlarını yollar !! ")
         await message.channel.send(f"motor yeni --> Yeni yüklenen MOTOR ilanlarını yollar !! ")
         await message.channel.send(f"arazi yeni --> Yeni yüklenen ARAZİ-SUV ilanlarını yollar !! ")
+        await message.channel.send(f"hino yeni --> Yeni yüklenen HİNO FB-110 ilanlarını yollar !! ")
 
     elif message.content.lower() == 'araba yeni':
         response = (vitrin.main(car_url))
