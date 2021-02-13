@@ -1,3 +1,4 @@
+
 import discord
 from dotenv import load_dotenv
 import sahibinden
@@ -14,6 +15,8 @@ ismakineleri_url = "https://www.sahibinden.com/kategori-vitrin?viewType=Classic&
 motor_url = "https://www.sahibinden.com/kategori-vitrin?viewType=Classic&category=3532&sorting=date_desc"
 
 arazi_url = "https://www.sahibinden.com/kategori-vitrin?viewType=Classic&category=3531&sorting=date_desc"
+
+hino_fb110 = "https://www.sahibinden.com/ticari-araclar-kamyon-kamyonet-hino-fb-fb-110?sorting=date_desc"
 
 ####################################################################################################################
 
@@ -106,12 +109,22 @@ async def on_message(message):
         
         await message.channel.send(f"{time} - {message.author.mention} --> En yeni MOTOR ilanları gönderildi !!")
         print(f'{client.user} MOTORLARI {message.author} yolladı!')
+
+    elif message.content.lower() == 'hino yeni':
+        response = (sahibinden.main(hino_fb110))
+        await message.author.create_dm()
+        #await message.author.dm_channel.send(f"-----------------------------------------------------------------------------------")
+        #await message.author.dm_channel.send(f"{message.author.mention} --> {response[0]}")
+        await message.author.dm_channel.send(f"------------------------------------------------------------------------------------HİNO FB-110 İLANLARI----------------------------------------------------------------------------------")
+        for i in range(1,len(response)):
+            await message.author.dm_channel.send(f"{i} - {message.author.mention} --> {response[i]}")
+        
+        await message.channel.send(f"{time} - {message.author.mention} --> En yeni HİNO FB-110 ilanları gönderildi !!")
+        print(f'{client.user} HİNO FB-110 {message.author} yolladı!')
+
+
     else:
         await message.channel.send(f"{time} - {message.author.mention} --> INVALID COMMAND TRY AGAIN")
         print(f'{client.user} mesajı {message.author} yolladı!')
-
-
-
-
 
 client.run("ODA5NDkyMzQyNTk0ODYzMTg1.YCV4fg.ZMLSy36OiR-Yf3VrENoxvq2ucrQ")
