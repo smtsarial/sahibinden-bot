@@ -36,3 +36,6 @@ bot.py -> Discord ile olan bağlantımızı yapıyor komutlara göre size linkle
 vitrin.py -> istediğiniz komuta göre size son 1 sayfadaki en güncel araçları ilanları getirecek. 
 
 Bunları yaparken request ile siteye ulaşıp bs4 ile verileri okuyorum.
+![image](https://github.com/smtsarial/sahibinden-bot/blob/main/images/1.png)
+![image](https://github.com/smtsarial/sahibinden-bot/blob/main/images/2.png)
+![image](https://github.com/smtsarial/sahibinden-bot/blob/main/images/3.png)
